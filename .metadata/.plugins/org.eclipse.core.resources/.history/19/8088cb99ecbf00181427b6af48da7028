@@ -1,0 +1,9 @@
+package com.qa.OMDbTest;
+
+public class Constants {
+	
+	public final static String FEATPATH = "C:\\Users\\Admin\\Desktop\\EclipseWorkspace\\OMDbTest\\src\\test\\java\\";
+	
+	public final static String FEATNAME = "intro.feature";
+
+}

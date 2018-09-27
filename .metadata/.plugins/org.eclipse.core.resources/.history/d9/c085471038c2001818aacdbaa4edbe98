@@ -1,0 +1,48 @@
+package com.qa.AutomatedTestingAssessment2;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class TestStepsSelenium {
+	
+	WebDriver driver;
+	ExtentReports report = ReportUtils.report;
+	ExtentTest test;
+	
+	@Before
+	public void setup()	{
+		System.setProperty(Constants.DRIVERTYPE, Constants.CHROMEDRIVERPATH);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(Constants.URL+Constants.PAGEURL);
+	}
+
+	@Given("^a vet$")
+	public void a_vet() throws Throwable {
+		System.out.println("this is a vet?");
+	}
+
+	@When("^I click on some records$")
+	public void i_click_on_some_records() throws Throwable {
+	    
+	}
+
+	@Then("^I can see the care available for animals$")
+	public void i_can_see_the_care_available_for_animals() throws Throwable {
+		
+	}
+	
+	@After
+	public void tearDown()	{
+		driver.quit();
+	}
+}

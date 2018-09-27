@@ -1,0 +1,9 @@
+package com.qa.AutomatedTestingAssessment2;
+
+public class Constants {
+	
+	public final static String FEATPATH = 
+			"C:\\Users\\Admin\\Desktop\\EclipseWorkspace\\AutomatedTestingAssessment2\\src\\test\\java\\assessment.feature";
+	public final static String FEATNAME = "assessment.feature";
+
+}

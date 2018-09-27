@@ -1,0 +1,41 @@
+package com.qa.SwaggerPersonExample;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+
+@SuppressWarnings("unused")
+public class SwaggerPersonTests {
+	
+	private RequestSpecification request;
+	private Response response;
+	private ValidatableResponse json;
+	
+	@Test
+	public void putAddTest()	{
+		fail();
+	}
+	
+	@Test
+	public void putUpdateTest()	{
+		fail();
+		
+	}
+	
+	@Test
+	public void getSingleTest()	{
+		fail();
+		
+	}
+	
+	@Test
+	public void getAllTest()	{
+		fail();
+		
+	}
+
+}

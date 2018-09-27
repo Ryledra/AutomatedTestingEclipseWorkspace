@@ -1,0 +1,9 @@
+package com.qa.WebScraper;
+
+public class TestRunner {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Admin\Desktop\EclipseWorkspace\SwaggerHotelsExample1"/>
+			<item value="C:\Users\Admin\Desktop\EclipseWorkspace\SwaggerUITest\pom.xml"/>
+			<item value="C:\Users\Admin\Desktop\EclipseWorkspace\OMDbTest\src\test\java\intro.feature"/>
+			<item value="C:\Users\Admin\Desktop\EclipseWorkspace\TheDemoSite\pom.xml"/>
+			<item value="C:\Users\Admin\Desktop\EclipseWorkspace\SeleniumExample"/>
+			<item value="C:\Users\Admin\Desktop\EclipseWorkspace\BlackJack\src\test\java\com\qa\ryledra\BlackJack\TestBlackJack.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.qa.SwaggerPersonExample"/>
+			<item value="com.qa.SwaggerUICucumber"/>
+			<item value="com.qa.SwaggerUITest"/>
+			<item value="com.qa.OMDbTest"/>
+			<item value="com.qa.AutomatedTestingAssessment"/>
+			<item value="com.qa.WebScraper"/>
+			<item value="com.qa.CucumberDDT"/>
+			<item value="com.qa.TeaTesting"/>
+			<item value="com.qa.ReportingEx"/>
+			<item value="com.qa.MercuryTours"/>
+			<item value="com.qa.DemoQA"/>
+			<item value="com.qa.MavenSetup"/>
+			<item value="com.qa.ryledra.ShoppingSite"/>
+			<item value="com.qa.ryledra.TheDemoSite"/>
+			<item value="com.qa.ryledra.SeleniumExample"/>
+		</list>
+		<list key="groupId">
+			<item value="com.qa"/>
+			<item value="com.qa.ryledra"/>
+		</list>
+		<list key="artifactId">
+			<item value="SwaggerPersonExample"/>
+			<item value="SwaggerUICucumber"/>
+			<item value="SwaggerUITest"/>
+			<item value="OMDbTest"/>
+			<item value="AutomatedTestingAssessment"/>
+			<item value="WebScraper"/>
+			<item value="CucumberDDT"/>
+			<item value="TeaTesting"/>
+			<item value="ReportingEx"/>
+			<item value="MercuryTours"/>
+			<item value="DemoQA"/>
+			<item value="MavenSetup"/>
+			<item value="ShoppingSite"/>
+			<item value="TheDemoSite"/>
+			<item value="SeleniumExample"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

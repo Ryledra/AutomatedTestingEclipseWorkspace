@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (12)" project="AutomatedTestingAssessment2" tests="15" started="15" failures="0" errors="0" ignored="12">
+  <testsuite name="com.qa.AutomatedTestingAssessment2.TestRunner" time="2.167">
+    <testsuite name="Feature: Testing Pet Clinic" time="2.167">
+      <testsuite name="Scenario: U1" time="1.994">
+        <testcase name="Given a vet" classname="Scenario: U1" time="1.96"/>
+        <testcase name="When I click on some records" classname="Scenario: U1" time="0.033"/>
+        <testcase name="Then I can see the care available for animals" classname="Scenario: U1" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: U2" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given an admin" classname="Scenario: U2" time="0.0" ignored="true"/>
+        <testcase name="When I update a record" classname="Scenario: U2" time="0.0" ignored="true"/>
+        <testcase name="Then the correct details are now shown" classname="Scenario: U2" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: U3" time="0.001" incomplete="true">
+        <skipped/>
+        <testcase name="Given an admin" classname="Scenario: U3" time="0.0" ignored="true"/>
+        <testcase name="When I delete a animal" classname="Scenario: U3" time="0.001" ignored="true"/>
+        <testcase name="Then emails arent sent to deceased annimals" classname="Scenario: U3" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: U5" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given an admin" classname="Scenario: U5" time="0.0" ignored="true"/>
+        <testcase name="When I add new records" classname="Scenario: U5" time="0.0" ignored="true"/>
+        <testcase name="Then the records are correct" classname="Scenario: U5" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: U5" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given an admin" classname="Scenario: U5" time="0.0" ignored="true"/>
+        <testcase name="When I add new owners to the records" classname="Scenario: U5" time="0.0" ignored="true"/>
+        <testcase name="Then the details show the change" classname="Scenario: U5" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

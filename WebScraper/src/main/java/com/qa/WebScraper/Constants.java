@@ -1,0 +1,9 @@
+package com.qa.WebScraper;
+
+public class Constants {
+	
+	public final static String DATAPATH = "C:\\Users\\Admin\\Desktop\\EclipseWorkspace\\WebScraper\\";
+	
+	public final static String FILENAME = "data.xlsx";
+
+}

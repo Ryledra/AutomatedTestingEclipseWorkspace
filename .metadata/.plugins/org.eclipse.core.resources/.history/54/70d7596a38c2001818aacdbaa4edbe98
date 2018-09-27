@@ -1,0 +1,17 @@
+package com.qa.AutomatedTestingAssessment2;
+
+import java.util.ArrayList;
+
+public class AllVetsRecords {
+	
+	private String vetsTableXPath = "//*[@id=\"vets\"]";
+	
+	public ArrayList<String> checkSpecs()	{
+		ArrayList<String> specs = new ArrayList<String>();
+		
+		
+		
+		return specs;
+	}
+
+}

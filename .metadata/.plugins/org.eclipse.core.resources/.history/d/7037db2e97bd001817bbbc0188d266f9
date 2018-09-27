@@ -1,0 +1,34 @@
+package com.qa.AutomatedTestingAssessment;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class CreateUser {
+	
+	@FindBy(name = "username")
+	private WebElement username;
+	
+	@FindBy(name = "password1")
+	private WebElement password1;
+	
+	@FindBy(name = "password2")
+	private WebElement password2;
+	
+	@FindBy(name = "fullname")
+	private WebElement fullname;
+	
+	@FindBy(name = "email")
+	private WebElement email;
+	
+	public void createUser(String uN, String p1, String p2, String fN, String e)	{
+		username.sendKeys(uN);
+		password1.sendKeys(p1);
+		password2.sendKeys(p2);
+		fullname.sendKeys(fN);
+		email.sendKeys(e);
+	}
+	
+	public void submitCreateUser()	{
+		email.submit();
+	}
+}

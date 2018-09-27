@@ -1,0 +1,95 @@
+package com.qa.AutomatedTestingAssessment2;
+
+import static io.restassured.RestAssured.given;
+
+import org.json.JSONObject;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.*;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+
+@SuppressWarnings("unused")
+public class TestStepsHTMLRequests {
+	
+	private RequestSpecification request;
+	private Response response;
+	private ValidatableResponse json;
+
+	@Given("^a vet$")
+	public void a_vet() throws Throwable {
+	    String vet = "this is a vet?";
+	    
+	    request = given().contentType(ContentType.JSON);
+	}
+
+	@When("^I click on some records$")
+	public void i_click_on_some_records() throws Throwable {
+	    response = request.when().get("http://10.0.10.10:9966/petclinic/api/vets");
+	}
+
+	@Then("^I can see the care available for animals$")
+	public void i_can_see_the_care_available_for_animals() throws Throwable {
+		
+		// json = response.then().statusCode(200);
+	    //JSONObject vetRecords = (JSONObject) response.getBody();
+	    
+	    System.out.println(response.getBody().asString());
+	}
+
+	@Given("^an admin$")
+	public void an_admin() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I update a record$")
+	public void i_update_a_record() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^the correct details are now shown$")
+	public void the_correct_details_are_now_shown() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I delete a animal$")
+	public void i_delete_a_animal() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^emails arent sent to deceased annimals$")
+	public void emails_arent_sent_to_deceased_annimals() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I add new records$")
+	public void i_add_new_records() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^the records are correct$")
+	public void the_records_are_correct() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I add new owners to the records$")
+	public void i_add_new_owners_to_the_records() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^the details show the change$")
+	public void the_details_show_the_change() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+}

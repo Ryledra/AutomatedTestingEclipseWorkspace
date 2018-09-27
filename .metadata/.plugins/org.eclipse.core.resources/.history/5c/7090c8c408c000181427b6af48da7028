@@ -1,0 +1,69 @@
+package com.qa.SwaggerUITest;
+
+import static org.junit.Assert.*;
+
+import org.json.JSONObject;
+
+import static io.restassured.RestAssured.*;
+
+import org.junit.Test;
+
+import gherkin.deps.com.google.gson.JsonObject;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+
+@SuppressWarnings("unused")
+public class SwaggerJUnit {
+	
+	private RequestSpecification request;
+	private Response response;
+	private ValidatableResponse json;
+	
+	@Test
+	public void getTest()	{
+		response = given().contentType(ContentType.JSON).get(Constants.URL+"?page=0&size=100");
+		//System.out.println(response.asString());
+	}
+	
+	@Test
+	public void putTest()	{
+
+		fail();
+	}
+	
+	@Test
+	public void postTest()	{
+		
+		RestAssured.baseURI = Constants.URL;
+		request = given();
+		
+		JSONObject params = new JSONObject();
+		
+		request.header("Content-Type", "application/json");
+		params.put("city", "Manchester");
+		params.put("description", "Quaint");
+		params.put("id", "1");
+		params.put("name", "Bobs");
+		params.put("rating", "4");
+		
+		request.body(params);
+		
+		response = request.post("/");
+		
+		System.out.println(response.asString());
+		json = response.then().statusCode(201);
+		
+//		response = given().contentType(ContentType.JSON).when().post(Constants.URL).thenReturn();
+//		System.out.println(response);
+	}
+	
+	@Test
+	public void deleteTest()	{
+
+		fail();
+	}
+
+}

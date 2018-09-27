@@ -1,0 +1,11 @@
+package com.qa.WebScraper;
+
+import javax.swing.text.Document;
+
+import org.jsoup.Jsoup;
+
+public class ScraperTest {
+	
+	Document doc = Jsoup.connect("").get();
+
+}

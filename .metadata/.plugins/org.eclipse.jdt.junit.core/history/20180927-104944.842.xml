@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.qa.AutomatedTestingAssessment2.TestRunner.Scenario: U5" project="AutomatedTestingAssessment2" tests="15" started="6" failures="0" errors="0" ignored="3">
+  <testsuite name="Feature: Testing Pet Clinic">
+    <testsuite name="Scenario: U1" incomplete="true">
+      <testcase name="Given a vet" classname="Scenario: U1" incomplete="true"/>
+      <testcase name="When I click on some records" classname="Scenario: U1" incomplete="true"/>
+      <testcase name="Then I can see the care available for animals" classname="Scenario: U1" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U2" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U2" incomplete="true"/>
+      <testcase name="When I update a record" classname="Scenario: U2" incomplete="true"/>
+      <testcase name="Then the correct details are now shown" classname="Scenario: U2" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U3" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U3" incomplete="true"/>
+      <testcase name="When I delete a animal" classname="Scenario: U3" incomplete="true"/>
+      <testcase name="Then emails arent sent to deceased annimals" classname="Scenario: U3" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U5" time="1.052" incomplete="true">
+      <skipped/>
+      <testcase name="Given an admin" classname="Scenario: U5" time="0.013"/>
+      <testcase name="When I add new records" classname="Scenario: U5" time="0.005"/>
+      <testcase name="Then the records are correct" classname="Scenario: U5" time="1.034" ignored="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U5" time="1.172" incomplete="true">
+      <skipped/>
+      <testcase name="Given an admin" classname="Scenario: U5" time="0.0"/>
+      <testcase name="When I add new owners to the records" classname="Scenario: U5" time="0.0" ignored="true"/>
+      <testcase name="Then the details show the change" classname="Scenario: U5" time="1.172" ignored="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

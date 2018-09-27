@@ -1,0 +1,75 @@
+package com.qa.SwaggerUITest;
+
+import static org.junit.Assert.*;
+
+import org.json.JSONObject;
+
+import static io.restassured.RestAssured.*;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import gherkin.deps.com.google.gson.JsonObject;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+import static org.hamcrest.Matchers.*;
+
+@SuppressWarnings("unused")
+public class SwaggerJUnit {
+	
+	private RequestSpecification request;
+	private Response response;
+	private ValidatableResponse json;
+	
+	//@Ignore
+	@Test
+	public void getTest()	{
+		response = given().contentType(ContentType.JSON).when().get(Constants.URL+"/?page=0&size=1");
+		System.out.println(response.asString());
+		json = response.then().body("content.name", equalTo("Bob's"));
+	}
+	
+	@Test
+	public void putTest()	{
+
+		fail();
+	}
+	
+	@Ignore
+	@Test
+	public void postTest()	{
+		
+		RestAssured.baseURI = Constants.URL;
+		request = given();
+		
+		JSONObject params = new JSONObject();
+		
+		request.header("Content-Type", "application/json");
+		params.put("city", "Leeds");
+		params.put("description", "Homely");
+		params.put("id", 1);
+		params.put("name", "Melvins");
+		params.put("rating", 4.5);
+		
+		System.out.println(params.toString());
+		
+		request.body(params.toString());
+		
+		json = request.when().post("/").then().statusCode(201);
+		
+//		System.out.println(response.asString());
+		
+//		response = given().contentType(ContentType.JSON).when().post(Constants.URL).thenReturn();
+//		System.out.println(response);
+	}
+	
+	@Test
+	public void deleteTest()	{
+
+		fail();
+	}
+
+}

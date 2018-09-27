@@ -1,0 +1,22 @@
+package com.qa.AutomatedTestingAssessment2;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Owners {
+	
+	@FindBy(xpath = "/html/body/app-root/app-owner-list/div/div/div/table")
+	private WebElement ownerTable;
+	
+	public String[] ownerTableName = {"/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[","]/td[1]/a"};
+	
+	public boolean checkOwner(String ownerName)	{
+		String ownerTableText = ownerTable.getText();
+		String[] rows = ownerTableText.split("\n");
+		for(int i = 1; i < rows.length; i++)	{
+			if(rows[i].split(" ")[0].equals(ownerName)) return true;
+		}
+		return false;
+	}
+
+}

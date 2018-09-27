@@ -1,0 +1,66 @@
+package com.qa.AutomatedTestingAssessment;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class DataManager {
+
+	private FileInputStream file;
+	private XSSFWorkbook workbook;
+	private XSSFSheet sheet;
+
+	public DataManager() {
+
+		file = null;
+		try {
+			file = new FileInputStream(Constants.DATAFPATH + Constants.DATAFNAME);
+		} catch (FileNotFoundException e) {
+		}
+
+		workbook = null;
+		try {
+			workbook = new XSSFWorkbook(file);
+		} catch (IOException e) {
+		}
+
+		sheet = workbook.getSheetAt(0);
+	}
+
+	public int getPhysicalNumberOfRows() {
+		return sheet.getPhysicalNumberOfRows();
+	}
+
+	public String getCellValueAt(int row, int col) {
+		return sheet.getRow(row).getCell(col).getStringCellValue();
+	}
+
+	public void writeToCell(String str, int row, int col)	{
+
+		try {
+			sheet.getRow(row).getCell(col).setCellValue(str);
+			
+			FileOutputStream fileOut = new FileOutputStream(Constants.DATAFPATH + Constants.DATAFNAME);
+
+			workbook.write(fileOut);
+
+			fileOut.flush();
+			fileOut.close();
+		} catch (NullPointerException npx) {
+			XSSFRow Row = sheet.getRow(row);
+			if (Row == null)	{
+				Row = sheet.createRow(row);
+			}
+			XSSFCell Cell = Row.createCell(col);
+			writeToCell(str, row, col);
+		} catch (IOException e) {
+			System.out.println("you left the .xlsx file open");
+		}
+	}
+}

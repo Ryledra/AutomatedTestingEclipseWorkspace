@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.qa.AutomatedTestingAssessment2.TestRunner.Scenario: U1" project="AutomatedTestingAssessment2" tests="15" started="3" failures="0" errors="2" ignored="0">
+  <testsuite name="Feature: Testing Pet Clinic" incomplete="true">
+    <testsuite name="Scenario: U1" time="2.083" incomplete="true">
+      <error>java.lang.ClassCastException: io.restassured.internal.RestAssuredResponseImpl cannot be cast to org.json.JSONObject&#13;
+	at com.qa.AutomatedTestingAssessment2.TestSteps.i_can_see_the_care_available_for_animals(TestSteps.java:37)&#13;
+	at ✽.Then I can see the care available for animals(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:10)&#13;
+&#13;
+</error>
+      <testcase name="Given a vet" classname="Scenario: U1" time="1.96"/>
+      <testcase name="When I click on some records" classname="Scenario: U1" time="0.005"/>
+      <testcase name="Then I can see the care available for animals" classname="Scenario: U1" time="0.118">
+        <error>java.lang.ClassCastException: io.restassured.internal.RestAssuredResponseImpl cannot be cast to org.json.JSONObject&#13;
+	at com.qa.AutomatedTestingAssessment2.TestSteps.i_can_see_the_care_available_for_animals(TestSteps.java:37)&#13;
+	at ✽.Then I can see the care available for animals(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Scenario: U2" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U2" incomplete="true"/>
+      <testcase name="When I update a record" classname="Scenario: U2" incomplete="true"/>
+      <testcase name="Then the correct details are now shown" classname="Scenario: U2" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U3" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U3" incomplete="true"/>
+      <testcase name="When I delete a animal" classname="Scenario: U3" incomplete="true"/>
+      <testcase name="Then emails arent sent to deceased annimals" classname="Scenario: U3" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U5" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U5" incomplete="true"/>
+      <testcase name="When I add new records" classname="Scenario: U5" incomplete="true"/>
+      <testcase name="Then the records are correct" classname="Scenario: U5" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U5" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U5" incomplete="true"/>
+      <testcase name="When I add new owners to the records" classname="Scenario: U5" incomplete="true"/>
+      <testcase name="Then the details show the change" classname="Scenario: U5" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

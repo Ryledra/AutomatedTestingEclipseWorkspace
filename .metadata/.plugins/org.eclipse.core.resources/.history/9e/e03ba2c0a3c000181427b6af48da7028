@@ -1,0 +1,96 @@
+package com.qa.SwaggerUITest;
+
+import static org.junit.Assert.*;
+
+import org.json.JSONObject;
+
+import static io.restassured.RestAssured.*;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import gherkin.deps.com.google.gson.JsonObject;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+import static org.hamcrest.Matchers.*;
+
+@SuppressWarnings("unused")
+public class SwaggerJUnit {
+	
+	private RequestSpecification request;
+	private Response response;
+	private ValidatableResponse json;
+	
+	@Ignore
+	@Test
+	public void getAllTest()	{
+		response = given().contentType(ContentType.JSON).when().get(Constants.URL+"/?page=0&size=1");
+		// System.out.println(response.asString());
+		json = response.then().statusCode(200); // = response.then().body("content.name", equalTo("Bob's"));
+	}
+	
+	@Ignore
+	@Test
+	public void getSingleTest()	{
+		int id = 28;
+		response = given().contentType(ContentType.JSON).when().get(Constants.URL+"/"+id);
+		System.out.println(response.asString());
+	}
+	
+	@Ignore
+	@Test
+	public void putTest()	{
+		int id = 28;
+		RestAssured.baseURI = Constants.URL+"/"+id;
+		JSONObject params = new JSONObject();
+		
+		params.put("city", "Leeds");
+		params.put("description", "Big Ass Place");
+		params.put("id", id);
+		params.put("name", "Melvins");
+		params.put("rating", 5);
+		
+		request = given().body(params.toString()).header("Content-Type", "application/json");
+		response = request.when().put("/");
+		json = response.then().statusCode(204);
+	}
+	
+	@Ignore
+	@Test
+	public void postTest()	{
+		
+		RestAssured.baseURI = Constants.URL;
+		JSONObject params = new JSONObject();
+		
+		params.put("city", "Leeds");
+		params.put("description", "Homely");
+		params.put("id", 1);
+		params.put("name", "Melvins");
+		params.put("rating", 4.5);
+		
+		System.out.println(params.toString());
+		
+		request = given().body(params.toString()).header("Content-Type", "application/json");
+		response = request.when().post("/");
+		json = response.then().statusCode(201);
+		
+//		System.out.println(response.asString());
+		
+//		response = given().contentType(ContentType.JSON).when().post(Constants.URL).thenReturn();
+//		System.out.println(response);
+	}
+	
+	@Ignore
+	@Test
+	public void deleteTest()	{
+		int id = 27;
+		request = given();
+		response = request.when().delete(Constants.URL+"/"+id);
+		json = response.then().statusCode(204);
+		fail();
+	}
+
+}

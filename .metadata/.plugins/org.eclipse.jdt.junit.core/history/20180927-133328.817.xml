@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (12)" project="AutomatedTestingAssessment2" tests="15" started="15" failures="6" errors="2" ignored="0">
+  <testsuite name="com.qa.AutomatedTestingAssessment2.TestRunner" time="33.501">
+    <testsuite name="Feature: Testing Pet Clinic" time="33.501">
+      <testsuite name="Scenario: U5" time="13.21" incomplete="true">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_details_show_the_change(TestStepsHTMLRequests.java:170)&#13;
+	at ✽.Then the details show the change(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:9)&#13;
+&#13;
+</failure>
+        <testcase name="Given an admin" classname="Scenario: U5" time="1.971"/>
+        <testcase name="When I add new owners to the records" classname="Scenario: U5" time="11.234"/>
+        <testcase name="Then the details show the change" classname="Scenario: U5" time="0.005">
+          <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_details_show_the_change(TestStepsHTMLRequests.java:170)&#13;
+	at ✽.Then the details show the change(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:9)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U4 - Create new pet record" time="9.476" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[11]/td[5]/a"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'STUDENT04', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56537}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 431d83746b89f09742b9de32a6b16853
+*** Element info: {Using=xpath, value=/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[11]/td[5]/a}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;
+	at com.qa.AutomatedTestingAssessment2.Owners.checkPet(Owners.java:33)&#13;
+	at com.qa.AutomatedTestingAssessment2.CheckRecords.checkNewPet(CheckRecords.java:38)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_records_are_correct(TestStepsHTMLRequests.java:146)&#13;
+	at ✽.Then the records are correct(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:16)&#13;
+&#13;
+</error>
+        <testcase name="Given an admin" classname="Scenario: U4 - Create new pet record" time="0.0"/>
+        <testcase name="When I add new records" classname="Scenario: U4 - Create new pet record" time="9.475"/>
+        <testcase name="Then the records are correct" classname="Scenario: U4 - Create new pet record" time="0.001">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[11]/td[5]/a"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'STUDENT04', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56537}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 431d83746b89f09742b9de32a6b16853
+*** Element info: {Using=xpath, value=/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[11]/td[5]/a}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;
+	at com.qa.AutomatedTestingAssessment2.Owners.checkPet(Owners.java:33)&#13;
+	at com.qa.AutomatedTestingAssessment2.CheckRecords.checkNewPet(CheckRecords.java:38)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_records_are_correct(TestStepsHTMLRequests.java:146)&#13;
+	at ✽.Then the records are correct(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:16)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U2" time="0.05" incomplete="true">
+        <failure>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;204&gt; but was &lt;404&gt;.
+&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)&#13;
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)&#13;
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_correct_details_are_now_shown(TestStepsHTMLRequests.java:78)&#13;
+	at ✽.Then the correct details are now shown(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:23)&#13;
+&#13;
+</failure>
+        <testcase name="Given an admin" classname="Scenario: U2" time="0.03"/>
+        <testcase name="When I update a record" classname="Scenario: U2" time="0.02"/>
+        <testcase name="Then the correct details are now shown" classname="Scenario: U2" time="0.0">
+          <failure>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;204&gt; but was &lt;404&gt;.
+&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)&#13;
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)&#13;
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_correct_details_are_now_shown(TestStepsHTMLRequests.java:78)&#13;
+	at ✽.Then the correct details are now shown(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:23)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U3 - Delete pet record" time="0.0" incomplete="true">
+        <failure>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;204&gt; but was &lt;404&gt;.
+&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)&#13;
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)&#13;
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.emails_arent_sent_to_deceased_annimals(TestStepsHTMLRequests.java:90)&#13;
+	at ✽.Then emails arent sent to deceased annimals(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:28)&#13;
+&#13;
+</failure>
+        <testcase name="Given an admin" classname="Scenario: U3 - Delete pet record" time="0.0"/>
+        <testcase name="When I delete a animal" classname="Scenario: U3 - Delete pet record" time="0.0"/>
+        <testcase name="Then emails arent sent to deceased annimals" classname="Scenario: U3 - Delete pet record" time="0.0">
+          <failure>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;204&gt; but was &lt;404&gt;.
+&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)&#13;
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)&#13;
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.emails_arent_sent_to_deceased_annimals(TestStepsHTMLRequests.java:90)&#13;
+	at ✽.Then emails arent sent to deceased annimals(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:28)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U1" time="1.758">
+        <testcase name="Given a vet" classname="Scenario: U1" time="0.516"/>
+        <testcase name="When I click on some records" classname="Scenario: U1" time="1.212"/>
+        <testcase name="Then I can see the care available for animals" classname="Scenario: U1" time="0.03"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

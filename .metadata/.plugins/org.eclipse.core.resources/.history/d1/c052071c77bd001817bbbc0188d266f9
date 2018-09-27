@@ -1,0 +1,14 @@
+package com.qa.AutomatedTestingAssessment;
+
+public class Constants {
+
+	public final static String URL = "localhost:8080";
+	
+	public final static String FEATPATH = "C:\\Users\\Admin\\Desktop\\EclipseWorkspace\\AutomatedTestingAssessment\\src\\test\\java\\";
+	
+	public final static String FEATNAME = "FridayAssessment.feature";
+	
+	public static final String CHROMEDRIVERPATH = "C:\\Testing\\chromedriver.exe";
+	
+	public static final String DRIVERTYPE = "webdriver.chrome.driver";
+}

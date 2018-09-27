@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.qa.AutomatedTestingAssessment2.TestRunner.Scenario: U4 - Create new pet record" project="AutomatedTestingAssessment2" tests="15" started="3" failures="2" errors="0" ignored="0">
+  <testsuite name="Feature: Testing Pet Clinic" incomplete="true">
+    <testsuite name="Scenario: U5" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U5" incomplete="true"/>
+      <testcase name="When I add new owners to the records" classname="Scenario: U5" incomplete="true"/>
+      <testcase name="Then the details show the change" classname="Scenario: U5" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U4 - Create new pet record" time="12.162" incomplete="true">
+      <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_records_are_correct(TestStepsHTMLRequests.java:146)&#13;
+	at ✽.Then the records are correct(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:16)&#13;
+&#13;
+</failure>
+      <testcase name="Given an admin" classname="Scenario: U4 - Create new pet record" time="1.724"/>
+      <testcase name="When I add new records" classname="Scenario: U4 - Create new pet record" time="10.434"/>
+      <testcase name="Then the records are correct" classname="Scenario: U4 - Create new pet record" time="0.004">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_records_are_correct(TestStepsHTMLRequests.java:146)&#13;
+	at ✽.Then the records are correct(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:16)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="Scenario: U2" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U2" incomplete="true"/>
+      <testcase name="When I update a record" classname="Scenario: U2" incomplete="true"/>
+      <testcase name="Then the correct details are now shown" classname="Scenario: U2" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U3 - Delete pet record" incomplete="true">
+      <testcase name="Given an admin" classname="Scenario: U3 - Delete pet record" incomplete="true"/>
+      <testcase name="When I delete a animal" classname="Scenario: U3 - Delete pet record" incomplete="true"/>
+      <testcase name="Then emails arent sent to deceased annimals" classname="Scenario: U3 - Delete pet record" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Scenario: U1" incomplete="true">
+      <testcase name="Given a vet" classname="Scenario: U1" incomplete="true"/>
+      <testcase name="When I click on some records" classname="Scenario: U1" incomplete="true"/>
+      <testcase name="Then I can see the care available for animals" classname="Scenario: U1" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (12)" project="AutomatedTestingAssessment2" tests="15" started="15" failures="6" errors="0" ignored="0">
+  <testsuite name="com.qa.AutomatedTestingAssessment2.TestRunner" time="53.852">
+    <testsuite name="Feature: Testing Pet Clinic" time="53.852">
+      <testsuite name="Scenario: U5" time="13.574" incomplete="true">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_details_show_the_change(TestStepsHTMLRequests.java:170)&#13;
+	at ✽.Then the details show the change(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:9)&#13;
+&#13;
+</failure>
+        <testcase name="Given an admin" classname="Scenario: U5" time="1.94"/>
+        <testcase name="When I add new owners to the records" classname="Scenario: U5" time="11.627"/>
+        <testcase name="Then the details show the change" classname="Scenario: U5" time="0.007">
+          <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_details_show_the_change(TestStepsHTMLRequests.java:170)&#13;
+	at ✽.Then the details show the change(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:9)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U4 - Create new pet record" time="9.353" incomplete="true">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_records_are_correct(TestStepsHTMLRequests.java:146)&#13;
+	at ✽.Then the records are correct(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:16)&#13;
+&#13;
+</failure>
+        <testcase name="Given an admin" classname="Scenario: U4 - Create new pet record" time="0.011"/>
+        <testcase name="When I add new records" classname="Scenario: U4 - Create new pet record" time="9.342"/>
+        <testcase name="Then the records are correct" classname="Scenario: U4 - Create new pet record" time="0.0">
+          <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_records_are_correct(TestStepsHTMLRequests.java:146)&#13;
+	at ✽.Then the records are correct(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:16)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U2" time="8.654" incomplete="true">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_correct_details_are_now_shown(TestStepsHTMLRequests.java:80)&#13;
+	at ✽.Then the correct details are now shown(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:23)&#13;
+&#13;
+</failure>
+        <testcase name="Given an admin" classname="Scenario: U2" time="0.0"/>
+        <testcase name="When I update a record" classname="Scenario: U2" time="8.647"/>
+        <testcase name="Then the correct details are now shown" classname="Scenario: U2" time="0.0">
+          <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_correct_details_are_now_shown(TestStepsHTMLRequests.java:80)&#13;
+	at ✽.Then the correct details are now shown(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:23)&#13;
+&#13;
+</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U3 - Delete pet record" time="11.373">
+        <testcase name="Given an admin" classname="Scenario: U3 - Delete pet record" time="0.028"/>
+        <testcase name="When I delete a animal" classname="Scenario: U3 - Delete pet record" time="11.345"/>
+        <testcase name="Then emails arent sent to deceased annimals" classname="Scenario: U3 - Delete pet record" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: U1" time="2.031">
+        <testcase name="Given a vet" classname="Scenario: U1" time="0.474"/>
+        <testcase name="When I click on some records" classname="Scenario: U1" time="1.534"/>
+        <testcase name="Then I can see the care available for animals" classname="Scenario: U1" time="0.023"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

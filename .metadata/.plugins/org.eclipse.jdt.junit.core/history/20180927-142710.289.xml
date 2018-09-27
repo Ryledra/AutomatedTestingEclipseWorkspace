@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (12)" project="AutomatedTestingAssessment2" tests="15" started="15" failures="0" errors="2" ignored="0">
+  <testsuite name="com.qa.AutomatedTestingAssessment2.TestRunner" time="57.869">
+    <testsuite name="Feature: Testing Pet Clinic" time="57.869">
+      <testsuite name="Scenario: U5" time="24.983">
+        <testcase name="Given an admin" classname="Scenario: U5" time="1.945"/>
+        <testcase name="When I add new owners to the records" classname="Scenario: U5" time="23.037"/>
+        <testcase name="Then the details show the change" classname="Scenario: U5" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: U4 - Create new pet record" time="0.47">
+        <testcase name="Given an admin" classname="Scenario: U4 - Create new pet record" time="0.005"/>
+        <testcase name="When I add new records" classname="Scenario: U4 - Create new pet record" time="0.465"/>
+        <testcase name="Then the records are correct" classname="Scenario: U4 - Create new pet record" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: U2" time="8.509" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'STUDENT04', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63095}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: fa14635fcd6c308677a13d5a94769f10
+*** Element info: {Using=xpath, value=/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;
+	at com.qa.AutomatedTestingAssessment2.Owners.checkOwner(Owners.java:29)&#13;
+	at com.qa.AutomatedTestingAssessment2.CheckRecords.checkNewPet(CheckRecords.java:39)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_correct_details_are_now_shown(TestStepsHTMLRequests.java:92)&#13;
+	at ✽.Then the correct details are now shown(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:23)&#13;
+&#13;
+</error>
+        <testcase name="Given an admin" classname="Scenario: U2" time="0.0"/>
+        <testcase name="When I update a record" classname="Scenario: U2" time="8.502"/>
+        <testcase name="Then the correct details are now shown" classname="Scenario: U2" time="0.007">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.10240 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'STUDENT04', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63095}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: fa14635fcd6c308677a13d5a94769f10
+*** Element info: {Using=xpath, value=/html/body/app-root/app-owner-list/div/div/div/table/tbody/tr[1]/td[1]/a}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;
+	at com.qa.AutomatedTestingAssessment2.Owners.checkOwner(Owners.java:29)&#13;
+	at com.qa.AutomatedTestingAssessment2.CheckRecords.checkNewPet(CheckRecords.java:39)&#13;
+	at com.qa.AutomatedTestingAssessment2.TestStepsHTMLRequests.the_correct_details_are_now_shown(TestStepsHTMLRequests.java:92)&#13;
+	at ✽.Then the correct details are now shown(C:/Users/Admin/Desktop/EclipseWorkspace/AutomatedTestingAssessment2/src/test/java/assessment.feature:23)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Scenario: U3 - Delete pet record" time="9.68">
+        <testcase name="Given an admin" classname="Scenario: U3 - Delete pet record" time="0.056"/>
+        <testcase name="When I delete a animal" classname="Scenario: U3 - Delete pet record" time="9.623"/>
+        <testcase name="Then emails arent sent to deceased annimals" classname="Scenario: U3 - Delete pet record" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: U1" time="4.448">
+        <testcase name="Given a vet" classname="Scenario: U1" time="1.076"/>
+        <testcase name="When I click on some records" classname="Scenario: U1" time="3.34"/>
+        <testcase name="Then I can see the care available for animals" classname="Scenario: U1" time="0.031"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

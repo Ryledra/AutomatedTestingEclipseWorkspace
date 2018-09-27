@@ -1,0 +1,44 @@
+package com.qa.SwaggerPersonExample;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.*;
+
+@SuppressWarnings("unused")
+public class SwaggerPersonTests {
+	
+	private RequestSpecification request;
+	private Response response;
+	private ValidatableResponse json;
+	
+	@Test
+	public void putAddTest()	{
+		request = given();
+		fail();
+	}
+	
+	@Test
+	public void putUpdateTest()	{
+		fail();
+		
+	}
+	
+	@Test
+	public void getSingleTest()	{
+		fail();
+		
+	}
+	
+	@Test
+	public void getAllTest()	{
+		fail();
+		
+	}
+
+}

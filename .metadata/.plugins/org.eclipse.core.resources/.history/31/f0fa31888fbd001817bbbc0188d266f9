@@ -1,0 +1,22 @@
+package com.qa.AutomatedTestingAssessment;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class UserConfig {
+	
+	@FindBy(name="email.address")
+	private WebElement email;
+	
+	@FindBy(id="yui-gen5-button")
+	private WebElement submit;
+	
+	public void changeEmail(WebDriver driver, String newEmail)	{
+		email.sendKeys(newEmail);
+	}
+	
+	public void submitChange()	{
+		submit.click();
+	}
+
+}

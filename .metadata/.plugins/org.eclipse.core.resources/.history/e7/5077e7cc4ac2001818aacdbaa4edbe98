@@ -1,0 +1,22 @@
+package com.qa.AutomatedTestingAssessment2;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class CheckRecords {
+
+	WebDriver driver;
+	
+	public CheckRecords()	{
+		System.setProperty(Constants.DRIVERTYPE, Constants.CHROMEDRIVERPATH);
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(Constants.URL+Constants.PAGEURL);
+	}
+	
+	public boolean checkNewOwner(String ownerName)	{
+		IndexPage indexPage = PageFactory.initElements(driver, IndexPage.class);
+		return false;
+	}
+}
